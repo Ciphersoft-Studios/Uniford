@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Set up-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Webside Design</title>
+    <!--Link HTML with CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <!--Icon link-->
+    <script src="https://kit.fontawesome.com/24229078ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Landing Page-->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our certificate & online programs for 2022</h1>
+    </section>
+
+    <!--Blog page content-->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our certificate & online programs for 2022</h2>
+                <p>We here at Eduford want to change a lot of things in 2022. The pandemic was difficult for everyone, that is why we want to create a system, where it doesn't matter if we are studying at school, at home or in a library. To archive that goal, a lot has to change. Be it the way we communicate or the way we study.</p>
+                <br>
+                <p>The first thing we would have to change is how we communicate with each other. If you sit in a classroom, you talk face to face with the person sitting in front of you. When you are at home, that is not an option. That is why we are switching to an online classroom tool to video chat when we are at home.</p>
+                <br>
+                <p>But this is just a small step in the right direction. We have to do so much more than that. But here at Eduford, we want to take on this challenge. We archive to have a fully functioning online school system at the end of 2023. While this won't be easy, it is definitely doable.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Catagories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We here at Eduford want to make studying more accessible by offering as much help as possible. We offer everything from events to courses, t help every student archive their goals.</p>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Moritz Schneider</p>
+    </section>
+
+    <!--Toggle Menu (JS)-->
+    <script>
+        var newLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-300px";
+        }
+    </script>
+
+</body>
+</html>
