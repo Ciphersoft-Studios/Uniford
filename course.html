@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Set up-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Webside Design</title>
+    <!--Link HTML with CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <!--Icon link-->
+    <script src="https://kit.fontawesome.com/24229078ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Landing Page-->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our courses</h1>
+    </section>
+
+    <!--Course-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>We offer a bunch of courses for every kind of person. It does'nt matter if you are just starting out or if you have already graduated. Just check out our plans and choose the one that best suits you!</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Beginner</h3>
+                <p>Have you just started studying? If your answer is yes, this course is the best option for you! We offer beginner-friendly content for anyone who is just starting out and who wants to learn what lies beyond a simple school book.</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Are you already more trusted with a subject, and you want to step up your game to the next level? This course offers a huge selection of different study-programs and learning-groups.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Have you already graduated, but you just can't get enough? Find out what you have missed during your stay at college and enroll into our special post graduation study course.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Facilities-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We offer a huge amount of diverse facilities, like:</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World class library</h3>
+                <p>Our library is one of the most advanced worldwide and hold a huge lelection of books to make sure, that everybody . </p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Playground</h3>
+                <p>We believe that free-time is one of the most important things on a campus. That's why we offer a huge playground for every student who enrolls in our college.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and healthy food</h3>
+                <p>Staying healthy is important. That's why we offer food in all variants. We are sure that there is something for everybody.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We here at Eduford want to make studying more accessible by offering as much help as possible. We offer everything from events to courses, t help every student archive their goals.</p>
+        
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Moritz Schneider</p>
+    </section>
+
+    <!--Toggle Menu (JS)-->
+    <script>
+        var newLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-300px";
+        }
+    </script>
+
+</body>
+</html>
